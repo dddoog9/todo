@@ -1,0 +1,100 @@
+.task-checkbox {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-checkbox__icon {
+  width: 17.5px;
+  height: 17.5px;
+  background-image: url(../../assets/unchecked.svg);
+  background-size: 100% 100%;
+  flex-shrink: 0;
+}
+
+.task-checkbox:hover .task-checkbox__icon {
+  background-image: url(../../assets/unchecked-hover.svg);
+}
+
+.task-checkbox_checked .task-checkbox__icon {
+  background-image: url(../../assets/checked.svg);
+}
+
+.task-checkbox_checked:hover .task-checkbox__icon {
+  background-image: url(../../assets/checked-hover.svg);
+}
+
+.delete-button {
+  --bg-color-hover: var(--gray-400);
+
+  --text-font-color: var(--gray-100);
+  --text-font-color-done: var(--gray-300);
+
+  appearance: none;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: var(--bg-color-hover, #333);
+}
+
+.delete-button__icon {
+  width: 12.5px;
+  height: 14px;
+  background-image: url(../../assets/trash.svg);
+  background-size: 100% 100%;
+}
+
+.delete-button:hover .delete-button__icon {
+  background-image: url(../../assets/trash-hover.svg);
+}
+
+.task {
+  --border-color: var(--gray-400);
+  --bg-color: var(--gray-500);
+
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #333);
+  background-color: var(--bg-color, #262626);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.task__checkbox {
+  flex-shrink: 0;
+}
+
+.task__text {
+  flex: 1 0 0;
+  color: var(--text-font-color, #f2f2f2);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.task__text_done {
+  color: var(--text-font-color-done, #808080);
+  text-decoration: line-through;
+}
+
+.task__delete-button {
+  flex-shrink: 0;
+}

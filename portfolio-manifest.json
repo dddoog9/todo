@@ -1,0 +1,9 @@
+{
+  "name": "Todo App",
+  "description": "Todo App on React.js",
+  "image_url": "https://github.com/dddoog9/todo/raw/main/cover.png",
+  "pin": 0,
+  "tags": ["JavaScript", "React", "CSS"],
+  "website_url": "https://dddoog9.github.io/todo",
+  "github_url": "https://github.com/dddoog9/todo"
+}

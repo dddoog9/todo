@@ -1,0 +1,35 @@
+.counter {
+  --font-color: var(--blue);
+
+  --number-bg-color: var(--gray-400);
+  --number-font-color: var(--gray-200);
+
+  color: var(--font-color, #4ea8de);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter__number {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: var(--number-bg-color, #333);
+  color: var(--number-font-color, #d9d9d9);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+}
+
+.info__created {}
+
+.info__done {
+  --font-color: var(--purple);
+
+  margin-left: auto;
+}
