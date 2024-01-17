@@ -9,4 +9,4 @@ Todo App on React.js
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
